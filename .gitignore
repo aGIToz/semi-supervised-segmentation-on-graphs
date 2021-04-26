@@ -140,3 +140,5 @@ eikonal_eq/eikonal2.cl
 eikonal_eq/eikonal3.cl
 graph/other_w.cl
 graph/other_patch_expo.cl
+eikonal_eq/eikonal2.py
+eikonal_eq/eikonal_infLap2.cl

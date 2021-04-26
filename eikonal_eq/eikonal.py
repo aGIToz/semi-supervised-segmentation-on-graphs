@@ -24,15 +24,11 @@ class hyperParams:
         """ A basic structure to group all the hyper params
         params:
         ------
-        dt
         it:
-        pl:
 
         """ 
-        def __init__(self, dt, it, pl):
-                self.dt = dt
+        def __init__(self, it):
                 self.it = it
-                self.pl = pl
 
 
 def eikonal(graph, signal, hp):
@@ -60,16 +56,11 @@ def eikonal(graph, signal, hp):
         red =  gray[:,0]
         # get the ids of the seed
         """
-        A = np.where(~signal.any(axis=1))[0]
-        A = A.astype('int32')
-        size_A = len(A)
         signal = np.reshape(signal,(n*chnl),order='F')
         signal = signal.astype('float32')
         print("signal",signal.shape) if bool_1 else print()
         print("n",n) if bool_1 else print()
-        dt = hp.dt
         it = hp.it
-        pl = hp.pl
         print("sucess till loading") if bool_1 else print()
 
         # create the opencl context
@@ -87,7 +78,6 @@ def eikonal(graph, signal, hp):
         mem_flags = cl.mem_flags
         ngbrs_buf = cl.Buffer(context, mem_flags.READ_ONLY | mem_flags.COPY_HOST_PTR,hostbuf=ngbrs) 
         signal_buf= cl.Buffer(context, mem_flags.READ_ONLY | mem_flags.COPY_HOST_PTR, hostbuf=signal)
-        A_buf= cl.Buffer(context, mem_flags.READ_ONLY | mem_flags.COPY_HOST_PTR, hostbuf=A)
         weight_buf = cl.Buffer(context, mem_flags.READ_ONLY | mem_flags.COPY_HOST_PTR, hostbuf=wgts)
 
         #need to create new signal 
@@ -96,7 +86,7 @@ def eikonal(graph, signal, hp):
 
         #run the kernel here in a loop
         for uv in range(0, it):
-                program.laplacian_filter(queue, (n*chnl,), None, A_buf,  signal_buf, new_signal_buf,  ngbrs_buf, weight_buf, np.int32(k), np.float32(pl), np.float32(dt),  np.int32(size_A), np.int32(chnl))
+                program.laplacian_filter(queue, (n*chnl,), None,  signal_buf, new_signal_buf,  ngbrs_buf, weight_buf, np.int32(k),   np.int32(chnl))
                 signal_buf,new_signal_buf=new_signal_buf,signal_buf
 
         # copy the new intensity vec
