@@ -1,3 +1,6 @@
+# Txt files
+*.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +130,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+1_eikonal_cheval.ipynb
+2_eikonal_chien.ipynb
+3_eikonal_seul_chien.ipynb
+4_eikonal_mpv.ipynb
+data/abder/
+eikonal_eq/eikonal.cl
+eikonal_eq/eikonal2.cl
+eikonal_eq/eikonal3.cl
+graph/other_w.cl
+graph/other_patch_expo.cl
