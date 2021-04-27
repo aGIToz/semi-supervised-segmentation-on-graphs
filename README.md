@@ -5,7 +5,7 @@
 
 
 
-# semi-supervised-segmentation
+# semi-supervised-segmentation-on-graphs
 - This is a reporduction of this work:
 
 - It solves time-dependent eikonal equation using GPU backend (pyopencl).
