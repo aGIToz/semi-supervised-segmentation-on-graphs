@@ -6,7 +6,7 @@
 
 
 # semi-supervised-segmentation-on-graphs
-- This is a reporduction of this work:
+- This is a reporduction of [this work](https://hal.archives-ouvertes.fr/hal-00365431):
 
 - It solves time-dependent eikonal equation using GPU backend (pyopencl).
 
@@ -17,3 +17,15 @@
 - `pip install -r requirements.txt` should work.
 
 # Cite this:
+```latex
+@InProceedings{10.1007/978-3-642-02256-2_16,
+author="Ta, Vinh-Thong
+and Elmoataz, Abderrahim
+and L{\'e}zoray, Olivier",
+title="Adaptation of Eikonal Equation over Weighted Graph",
+booktitle="Scale Space and Variational Methods in Computer Vision",
+year="2009",
+publisher="Springer Berlin Heidelberg",
+pages="187--199"
+}
+```
