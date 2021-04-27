@@ -10,7 +10,7 @@
 
 - It solves time-dependent eikonal equation using GPU backend (pyopencl).
 
-- Render the jupyternotebook here.
+- If there are rendering issues, render the notebook at [nbviewer](https://nbviewer.jupyter.org/).
 
 # Installation.
 - One needs mainly `pyopencl` and `bufferkdtree` library to create the knn-graph and run the pde on GPU.
