@@ -10,7 +10,7 @@
 
 - It solves time-dependent eikonal equation using GPU backend (pyopencl).
 
-- If there are rendering issues, render the notebook at [nbviewer](https://nbviewer.jupyter.org/).
+- [Render the notebook here](https://nbviewer.jupyter.org/github/aGIToz/semi-supervised-segmentation-on-graphs/blob/main/eikonal_graph.ipynb?flush_cache=true).
 
 # Installation.
 - One needs mainly `pyopencl` and `bufferkdtree` library to create the knn-graph and run the pde on GPU.
