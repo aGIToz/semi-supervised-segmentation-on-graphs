@@ -1,6 +1,6 @@
-| Image     | Seeds|
-| ----------- | ----------- |
-|<img src="./data/chien_color_crop2.png" alt="org_img" width="256" height="256">   | <img src="./data/out_chien.png" alt="seeds" width="256" height="256">    |
+| Image     | Seeds| Segmented |
+| ----------- | ----------- | ----------- |
+|<img src="./data/chien_color_crop2.png" alt="org_img" width="256" height="256">   | <img src="./data/out_chien.png" alt="seeds" width="256" height="256">    |<img src="./data/seg_out.png" alt="segmented" width="256" height="256"> |
 
 
 
