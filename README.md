@@ -9,7 +9,7 @@
 - This is a reporduction of [this work](https://hal.archives-ouvertes.fr/hal-00365431):
 
 - It solves time-dependent eikonal equation using GPU backend (pyopencl).
-
+- <img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;f}{\partial&space;t}&space;=&space;\mathbf{1}&space;-&space;\|\nabla_{w}^{-}f\|_{\infty}" title="\frac{\partial f}{\partial t} = \mathbf{1} - \|\nabla_{w}^{-}f\|_{\infty}" />
 - [Render the notebook here](https://nbviewer.jupyter.org/github/aGIToz/semi-supervised-segmentation-on-graphs/blob/main/eikonal_graph.ipynb?flush_cache=true).
 
 # Installation.
