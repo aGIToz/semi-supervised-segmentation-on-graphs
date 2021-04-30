@@ -2,7 +2,7 @@
 | ----------- | ----------- | ----------- |
 |<img src="./images/chien_tapestry_bayeux.png" alt="org_img" width="256" height="256">   | <img src="./images/seeds.png" alt="seeds" width="256" height="256">    |<img src="./images/seg_out.png" alt="segmented" width="256" height="256"> |
 
-
+Image credit: https://www.bayeuxmuseum.com/en/the-bayeux-tapestry/discover-the-bayeux-tapestry/explore-online/
 
 
 # semi-supervised-segmentation-on-graphs
