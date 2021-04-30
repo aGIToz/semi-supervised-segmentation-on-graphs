@@ -18,14 +18,13 @@
 
 # Cite this:
 ```latex
-@InProceedings{10.1007/978-3-642-02256-2_16,
-author="Ta, Vinh-Thong
-and Elmoataz, Abderrahim
-and L{\'e}zoray, Olivier",
-title="Adaptation of Eikonal Equation over Weighted Graph",
-booktitle="Scale Space and Variational Methods in Computer Vision",
-year="2009",
-publisher="Springer Berlin Heidelberg",
-pages="187--199"
-}
+@ARTICLE{5676212,
+  author={Ta, Vinh-Thong and Elmoataz, Abderrahim and Lezoray, Olivier},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Nonlocal PDEs-Based Morphology on Weighted Graphs for Image and Data Processing}, 
+  year={2011},
+  volume={20},
+  number={6},
+  pages={1504-1516},
+  doi={10.1109/TIP.2010.2101610}}
 ```
